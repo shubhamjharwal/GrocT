@@ -25,7 +25,7 @@ public class Vegetables extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegetables);
         // Calling the RecyclerView
-        mRecyclerView = (RecyclerView)findViewById(R.id.Recycleview1);
+        mRecyclerView = (RecyclerView) findViewById(R.id.Recycleview1);
         mRecyclerView.setHasFixedSize(true);
 
         // The number of Columns
@@ -67,7 +67,6 @@ public class Vegetables extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 
 }

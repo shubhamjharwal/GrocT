@@ -9,9 +9,10 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
 
 import android.support.v4.widget.DrawerLayout;
@@ -31,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
     private SliderLayout mDemoSlider;
 
-    String TITLES[] = {"Home", "MyCart", "Beverages", "Vegetables", "Personal Care","Household","Party Time ","Help & Support"};
-    int ICONS[] = {R.drawable.home, R.drawable.cart, R.drawable.beverages, R.drawable.vagetables, R.drawable.personal, R.drawable.household,R.drawable.party,R.drawable.four};
+    String TITLES[] = {"Home", "MyCart", "Beverages", "Vegetables", "Personal Care", "Household", "Party Time ", "Help & Support"};
+    int ICONS[] = {R.drawable.home, R.drawable.cart, R.drawable.beverages, R.drawable.vagetables, R.drawable.personal, R.drawable.household, R.drawable.party, R.drawable.four};
 
     String NAME = "shubham jharwal";
     String EMAIL = "shubham@tjs.co.in";
-    int PROFILE ;
+    int PROFILE;
 
     private Toolbar toolbar;
 
@@ -54,27 +55,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
-
-
-        mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
         // The number of Columns
-         mLayoutManager = new GridLayoutManager(this, 1);
+        mLayoutManager = new GridLayoutManager(this, 1);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mAdapter = new GridAdapter();
         mRecyclerView.setAdapter(mAdapter);
 
 
-
-
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
 
         SliderLayout slideshow = (SliderLayout) findViewById(R.id.slider);
@@ -86,24 +79,52 @@ public class MainActivity extends AppCompatActivity {
         demoSlider.description("Mind,Body & Soul")
                 .image(R.drawable.one);
         slideshow.addSlider(demoSlider);
+        demoSlider.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+            @Override
+            public void onSliderClick(BaseSliderView baseSliderView) {
+                Intent i = new Intent(MainActivity.this, one.class);
+                startActivity(i);
+            }
+        });
 
         demoSlider1.description("Go with the flavor")
                 .image(R.drawable.two);
         slideshow.addSlider(demoSlider1);
+        demoSlider1.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+            @Override
+            public void onSliderClick(BaseSliderView baseSliderView) {
+                Intent i = new Intent(MainActivity.this, two.class);
+                startActivity(i);
+            }
+        });
 
         demoSlider2.description("Juice Cocktail")
                 .image(R.drawable.three);
         slideshow.addSlider(demoSlider2);
+        demoSlider2.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+            @Override
+            public void onSliderClick(BaseSliderView baseSliderView) {
+                Intent i = new Intent(MainActivity.this, three.class);
+                startActivity(i);
+            }
+        });
 
         demoSlider3.description("Wow!!")
                 .image(R.drawable.four);
         slideshow.addSlider(demoSlider3);
+        demoSlider3.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+            @Override
+            public void onSliderClick(BaseSliderView baseSliderView) {
+                Intent i = new Intent(MainActivity.this,four.class);
+                startActivity(i);
+            }
+        });
 
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView); // Assigning the RecyclerView Object to the xml View
 
         mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
 
-        mAdapter = new MyAdapter(TITLES, ICONS, NAME, EMAIL, PROFILE,this);       // Creating the Adapter of MyAdapter class(which we are going to see in a bit)
+        mAdapter = new MyAdapter(TITLES, ICONS, NAME, EMAIL, PROFILE, this);       // Creating the Adapter of MyAdapter class(which we are going to see in a bit)
         // And passing the titles,icons,header view name, header view email,
         // and header view profile picture
 
@@ -153,27 +174,27 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        switch(id){
+        switch (id) {
 
             case R.id.cart:
-                Intent intent = new Intent(MainActivity.this,Cart.class);
+                Intent intent = new Intent(MainActivity.this, Cart.class);
                 startActivity(intent);
                 return true;
-            case  R.id.search:
-                Intent intent1 = new Intent(MainActivity.this,Search.class);
+            case R.id.search:
+                Intent intent1 = new Intent(MainActivity.this, Search.class);
                 startActivity(intent1);
                 return true;
-
 
 
         }
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.cart) {
-            Intent intent = new Intent(MainActivity.this,Cart.class);
+            Intent intent = new Intent(MainActivity.this, Cart.class);
             startActivity(intent);
             return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }

@@ -67,6 +67,21 @@
             android:name=".Search"
             android:label="@string/title_activity_search" >
         </activity>
+        <activity
+            android:name=".one"
+            android:label="One" />
+        <activity
+            android:name=".two"
+            android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+            android:name=".three"
+            android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+            android:name=".four"
+            android:label="@string/title_activity_four" >
+        </activity>
     </application>
 
 </manifest>

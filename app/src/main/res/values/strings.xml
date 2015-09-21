@@ -33,4 +33,18 @@
     <string name="title_activity_brinja">brinja</string>
     <string name="title_activity_cart">cart</string>
     <string name="title_activity_search">Search</string>
+    <string name="one_desc">This amazing product will help you to fuel your Mind , Body and Soul.</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="title_activity_two">two</string>
+    <string name="title_activity_three">three</string>
+    <string name="cock_tail">Welsh Cocktails !</string>
+    <string name="three_desc">Welsh Cocktails for the hype !</string>
+    <string name="title_activity_four">four</string>
+    <string name="wow_deals">Wow Deals!</string>
+    <string name="four_desc">Deals so good they will make you say WOW !!</string>
+    <string name="two_desc">Natural juices to Refresh your mood</string>
+    <string name="natural_juice">Natural juice !</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_profile">My Profile</string>
+    <string name="help_center">Help Center</string>
 </resources>
