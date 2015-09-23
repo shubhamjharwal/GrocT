@@ -68,19 +68,80 @@
             android:label="@string/title_activity_search" >
         </activity>
         <activity
-            android:name=".one"
-            android:label="One" />
-        <activity
-            android:name=".two"
-            android:label="@string/title_activity_two" >
+            android:name=".Myprofile"
+            android:label="@string/title_activity_my_profile"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
         </activity>
         <activity
-            android:name=".three"
-            android:label="@string/title_activity_three" >
+            android:name=".My_wishlist"
+            android:label="@string/title_activity_my_wishlist"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
         </activity>
         <activity
-            android:name=".four"
-            android:label="@string/title_activity_four" >
+            android:name=".Myorders"
+            android:label="@string/title_activity_my_orders"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".About_us"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Helpline"
+            android:label="@string/title_activity_helpline"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Address_info"
+            android:label="@string/title_activity_address_info" >
+        </activity>
+        <activity
+            android:name=".One"
+            android:label="@string/title_activity_one"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Two"
+            android:label="@string/title_activity_two"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Three"
+            android:label="@string/title_activity_three"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Four"
+            android:label="@string/title_activity_four"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
         </activity>
     </application>
 

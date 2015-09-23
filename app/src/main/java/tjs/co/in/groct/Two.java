@@ -3,57 +3,33 @@ package tjs.co.in.groct;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-
-public class Cart extends AppCompatActivity {
-
-    RecyclerView mRecyclerView;
-    RecyclerView.LayoutManager mLayoutManager;
-    RecyclerView.Adapter mAdapter;
-    Button button;
+public class Two extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart);
-
-        // Calling the RecyclerView
-        mRecyclerView = (RecyclerView) findViewById(R.id.Recycleview2);
-        mRecyclerView.setHasFixedSize(true);
-
-        // The number of Columns
-        mLayoutManager = new GridLayoutManager(this, 1);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-        mAdapter = new GridAdapter2();
-        mRecyclerView.setAdapter(mAdapter);
-
-        button = (Button)findViewById(R.id.btn_add_id);
+        setContentView(R.layout.activity_two);
+        ImageButton button = (ImageButton) findViewById(R.id.c2_b);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(Cart.this,Address_info.class);
-                startActivity(intent);
+                Intent i = new Intent(Two.this,Cart.class);
+                startActivity(i);
             }
         });
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_cart, menu);
+        getMenuInflater().inflate(R.menu.menu_two, menu);
         return true;
-
     }
 
     @Override
@@ -64,13 +40,10 @@ public class Cart extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.cart) {
-
+        if (id == R.id.action_settings) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-
-
 }

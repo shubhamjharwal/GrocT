@@ -82,8 +82,10 @@ public class MainActivity extends AppCompatActivity {
         demoSlider.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
-                Intent i = new Intent(MainActivity.this, one.class);
-                startActivity(i);
+
+                Intent intent = new Intent(MainActivity.this,One.class);
+                startActivity(intent);
+
             }
         });
 
@@ -93,8 +95,11 @@ public class MainActivity extends AppCompatActivity {
         demoSlider1.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
-                Intent i = new Intent(MainActivity.this, two.class);
-                startActivity(i);
+
+                Intent intent1 = new Intent(MainActivity.this,Two.class);
+                startActivity(intent1);
+
+
             }
         });
 
@@ -104,8 +109,11 @@ public class MainActivity extends AppCompatActivity {
         demoSlider2.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
-                Intent i = new Intent(MainActivity.this, three.class);
-                startActivity(i);
+
+                Intent intent2 = new Intent(MainActivity.this,Three.class);
+                startActivity(intent2);
+
+
             }
         });
 
@@ -115,8 +123,10 @@ public class MainActivity extends AppCompatActivity {
         demoSlider3.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
-                Intent i = new Intent(MainActivity.this,four.class);
-                startActivity(i);
+
+                Intent intent3 = new Intent(MainActivity.this,Four.class);
+                startActivity(intent3);
+
             }
         });
 
@@ -185,16 +195,35 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(MainActivity.this, Search.class);
                 startActivity(intent1);
                 return true;
+            case R.id.My_Cart:
+                Intent intent2 = new Intent(MainActivity.this, Cart.class);
+                startActivity(intent2);
+                return true;
+            case R.id.My_Wishlist:
+                Intent intent3 = new Intent(MainActivity.this, My_wishlist.class);
+                startActivity(intent3);
+                return true;
+            case R.id.My_Orders:
+                Intent intent4 = new Intent(MainActivity.this, Myorders.class);
+                startActivity(intent4);
+                return true;
+            case R.id.about_us:
+                Intent intent5 = new Intent(MainActivity.this, About_us.class);
+                startActivity(intent5);
+                return true;
+            case R.id.help_center:
+                Intent intent6 = new Intent(MainActivity.this, Helpline.class);
+                startActivity(intent6);
+                return true;
+            case R.id.My_profile:
+                Intent intent7 = new Intent(MainActivity.this, Myprofile.class);
+                startActivity(intent7);
+                return true;
 
 
         }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.cart) {
-            Intent intent = new Intent(MainActivity.this, Cart.class);
-            startActivity(intent);
-            return true;
-        }
+
 
 
         return super.onOptionsItemSelected(item);

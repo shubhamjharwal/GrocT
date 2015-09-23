@@ -3,39 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/help_center"
+        android:icon="@drawable/add"
         android:orderInCategory="6"
+
         android:title="@string/help_center"
-        app:showAsAction="never" />
+        app:showAsAction="withText" />
     <item
         android:id="@+id/My_Cart"
         android:orderInCategory="2"
+        android:icon="@drawable/home"
         android:title="@string/my_cart"
-        app:showAsAction="never" />
+        app:showAsAction="withText" />
     <item
         android:id="@+id/My_profile"
         android:orderInCategory="1"
         android:title="@string/my_profile"
-        app:showAsAction="never" />
+        app:showAsAction="withText" />
     <item
         android:id="@+id/My_Wishlist"
         android:orderInCategory="3"
         android:title="My Wishlist"
-        app:showAsAction="never" />
+        app:showAsAction="withText" />
     <item
         android:id="@+id/about_us"
         android:orderInCategory="5"
         android:title="About Us"
-        app:showAsAction="never" />
+        app:showAsAction="withText" />
     <item
         android:id="@+id/My_Orders"
         android:orderInCategory="4"
         android:title="My Orders"
-        app:showAsAction="never" />
-
-
-
-
+        app:showAsAction="withText" />
 
     <item
         android:id="@+id/cart"

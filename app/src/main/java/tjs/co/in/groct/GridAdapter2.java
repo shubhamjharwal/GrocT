@@ -8,64 +8,48 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class GridAdapter1 extends RecyclerView.Adapter<GridAdapter1.ViewHolder> {
+public class GridAdapter2 extends RecyclerView.Adapter<GridAdapter2.ViewHolder> {
 
-    List<EndangeredItem1> mItems;
-    Context context;
+    List<EndangeredItem2> mItems;
 
-    public GridAdapter1() {
+    public GridAdapter2() {
         super();
-        mItems = new ArrayList<EndangeredItem1>();
-        EndangeredItem1 species = new EndangeredItem1();
+
+        mItems = new ArrayList<EndangeredItem2>();
+        EndangeredItem2 species = new EndangeredItem2();
+
         species.setName("Brinjal");
         species.setThumbnail(R.drawable.v1);
         mItems.add(species);
 
-        species = new EndangeredItem1();
+        species = new EndangeredItem2();
         species.setName("Carrort");
         species.setThumbnail(R.drawable.v2);
         mItems.add(species);
 
-        species = new EndangeredItem1();
+        species = new EndangeredItem2();
         species.setName("Ginger");
         species.setThumbnail(R.drawable.v3);
         mItems.add(species);
 
-        species = new EndangeredItem1();
+        species = new EndangeredItem2();
         species.setName("Green Chilli ");
         species.setThumbnail(R.drawable.v4);
         mItems.add(species);
 
 
-        species = new EndangeredItem1();
+        species = new EndangeredItem2();
         species.setName("Lemon");
         species.setThumbnail(R.drawable.v5);
         mItems.add(species);
 
-        species = new EndangeredItem1();
-        species.setName("Onion");
-        species.setThumbnail(R.drawable.v6);
-        mItems.add(species);
 
-
-        species = new EndangeredItem1();
-        species.setName("Potatoes");
-        species.setThumbnail(R.drawable.v7);
-        mItems.add(species);
-
-
-        species = new EndangeredItem1();
-        species.setName("Beans");
-        species.setThumbnail(R.drawable.v8);
-        mItems.add(species);
 
 
     }
@@ -73,16 +57,19 @@ public class GridAdapter1 extends RecyclerView.Adapter<GridAdapter1.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.grid_item1, viewGroup, false);
+                .inflate(R.layout.grid_item2, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        EndangeredItem1 nature = mItems.get(i);
+        EndangeredItem2 nature = mItems.get(i);
         viewHolder.tvspecies.setText(nature.getName());
         viewHolder.imgThumbnail.setImageResource(nature.getThumbnail());
+
+
+
     }
 
     @Override
@@ -95,35 +82,24 @@ public class GridAdapter1 extends RecyclerView.Adapter<GridAdapter1.ViewHolder> 
 
         public ImageView imgThumbnail;
         public TextView tvspecies;
-        Button button,button1;
 
         public ViewHolder(View itemView) {
             super(itemView);
             imgThumbnail = (ImageView)itemView.findViewById(R.id.img_thumbnail);
             tvspecies = (TextView)itemView.findViewById(R.id.tv_species);
-             button = (Button)itemView.findViewById(R.id.plus_id);
-             button1 = (Button)itemView.findViewById(R.id.minus_id);
+
+         itemView.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+
+                 if (getPosition()==0){
+                     Intent intent = new Intent(v.getContext(),  MainActivity.class);
+                     v.getContext().startActivity(intent);
+                 }
 
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (getPosition()==0)
-
-                   {
-
-
-
-
-                    }
-
-
-
-                }
-            });
-
-
+             }
+         });
 
         }
     }

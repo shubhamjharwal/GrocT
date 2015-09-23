@@ -8,50 +8,66 @@
     android:elevation="7dp">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <include layout="@layout/statusbarcolor" />
 
 
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <include
-                android:id="@+id/tool_bar"
-                layout="@layout/toolbar"></include>
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="2dp">
+                android:layout_height="match_parent">
 
-                <com.daimajia.slider.library.SliderLayout
-                    android:id="@+id/slider"
+                <include layout="@layout/statusbarcolor" />
+
+
+                <LinearLayout
+
                     android:layout_width="match_parent"
-                    android:layout_height="160dp" />
-
-            </LinearLayout>
-
-
-            <android.support.v7.widget.RecyclerView
-
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
 
-        </LinearLayout>
+                    <include
+                        android:id="@+id/tool_bar"
+                        layout="@layout/toolbar"></include>
 
-    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp">
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp" />
+
+
+
+
+                    </LinearLayout>
+
+
+                            <android.support.v7.widget.RecyclerView
+
+                                android:id="@+id/recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
 
 
     <android.support.v7.widget.RecyclerView

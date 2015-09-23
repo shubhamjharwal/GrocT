@@ -47,4 +47,12 @@
     <string name="my_cart">My Cart</string>
     <string name="my_profile">My Profile</string>
     <string name="help_center">Help Center</string>
+    <string name="title_activity_my_profile">my_profile</string>
+    <string name="title_activity_my_wishlist">my_wishlist</string>
+    <string name="title_activity_my_orders">my_orders</string>
+    <string name="title_activity_about_us">about_us</string>
+    <string name="title_activity_helpline">Helpline</string>
+    <string name="title_activity_address_info">Address_info</string>
+    <string name="title_activity_one">One</string>
+    <string name="title_activity_xyz">xyz</string>
 </resources>

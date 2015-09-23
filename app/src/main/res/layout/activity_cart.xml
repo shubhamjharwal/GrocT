@@ -1,28 +1,43 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bluee"
- tools:context="tjs.co.in.groct.Cart">
+    tools:context="tjs.co.in.groct.Cart">
+
     <include
         layout="@layout/statusbarcolor"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/rlrv"
+            android:layout_below="@id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycleview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        <Button
+            android:id="@+id/btn_add_id"
+            android:text="Checkout!!"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="46dp" />
 
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        </RelativeLayout>
 
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/comingsoon"/>
-
-
-
-
-    </LinearLayout>
+</RelativeLayout>
 
 
 
@@ -31,8 +46,3 @@
 
 
 
-
-
-
-
-</LinearLayout>
