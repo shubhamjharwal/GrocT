@@ -16,19 +16,10 @@
             layout="@layout/statusbarcolor" />
 
 
-        <LinearLayout
-
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-        </LinearLayout>
 
 
         <SearchView
-
+android:id="@+id/search_bar"
             android:layout_width="fill_parent"
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
@@ -42,6 +33,20 @@
             android:searchIcon="@drawable/seac">
 
         </SearchView>
+        <RelativeLayout
+            android:id="@+id/rlrv"
+            android:layout_below="@id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycleview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
