@@ -55,4 +55,5 @@
     <string name="title_activity_address_info">Address_info</string>
     <string name="title_activity_one">One</string>
     <string name="title_activity_xyz">xyz</string>
+    <string name="search_hint">Search products here.</string>
 </resources>

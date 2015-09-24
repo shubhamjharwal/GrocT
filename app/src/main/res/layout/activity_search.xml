@@ -1,29 +1,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bluee"
-   tools:context="tjs.co.in.groct.Search">
-    <include
-        layout="@layout/statusbarcolor"/>
+    android:orientation="vertical"
+    tools:context="tjs.co.in.groct.Search">
 
-
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:src="@drawable/searchhh"
+        <include layout="@layout/statusbarcolor" />
+
+
+        <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="300dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
-    </LinearLayout>
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/toolbar"></include>
+
+            <SearchView
+                android:iconifiedByDefault="false"
+                android:keepScreenOn="true"
+               android:searchIcon="@drawable/seac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:queryHint="@string/search_hint">
+
+            </SearchView>
 
 
+        </LinearLayout>
 
+    </RelativeLayout>
 
 
 </LinearLayout>
