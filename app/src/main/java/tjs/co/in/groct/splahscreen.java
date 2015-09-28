@@ -19,7 +19,8 @@ public class splahscreen extends AppCompatActivity {
         final Animation animation = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
         final Animation animation1 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.fadeout);
         imageView.startAnimation(animation);
-        animation.setAnimationListener(new Animation.AnimationListener() {
+        animation.setAnimationListener(new Animation.AnimationListener()
+        {
             @Override
             public void onAnimationStart(Animation animation) {
 

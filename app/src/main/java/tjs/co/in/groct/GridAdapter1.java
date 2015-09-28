@@ -105,6 +105,16 @@ public class GridAdapter1 extends RecyclerView.Adapter<GridAdapter1.ViewHolder> 
              button1 = (Button)itemView.findViewById(R.id.minus_id);
 
 
+
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context,"Item Added",Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

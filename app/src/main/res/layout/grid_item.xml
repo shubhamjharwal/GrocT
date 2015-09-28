@@ -14,13 +14,15 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         card_view:cardElevation="0.01dp"
-        android:layout_marginBottom="0dp">
+        android:layout_marginBottom="0dp"
+        android:onClick="true">
         <RelativeLayout
             android:id="@+id/top_layout"
             android:layout_width="match_parent"
             android:layout_height="140dp">
 
             <ImageView
+                android:onClick="true"
                 android:id="@+id/img_thumbnail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

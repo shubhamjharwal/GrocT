@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    android:onClick="true"
                     android:id="@+id/minus_id"
                     android:background ="@drawable/minus"
                     android:layout_width="32dp"
@@ -81,6 +82,7 @@
 
 
                 <Button
+                    android:onClick="true"
                     android:id="@+id/plus_id"
                     android:background ="@drawable/plus32"
                     android:layout_width="32dp"
@@ -92,6 +94,7 @@
             </LinearLayout>
 
             <ImageButton
+                android:onClick="true"
                 android:id="@+id/addtocart_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
