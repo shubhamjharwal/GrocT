@@ -56,4 +56,5 @@
     <string name="title_activity_one">One</string>
     <string name="title_activity_xyz">xyz</string>
     <string name="search_hint">Search products here.</string>
+    <string name="title_activity_payment_gateway">Payment_gateway</string>
 </resources>

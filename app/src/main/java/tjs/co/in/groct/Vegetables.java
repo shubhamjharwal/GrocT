@@ -38,11 +38,7 @@ public class Vegetables extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.backkkkkk);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 
     }
 

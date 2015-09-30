@@ -1,30 +1,17 @@
 package tjs.co.in.groct;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class Address_info extends AppCompatActivity {
-    Button button;
+public class Payment_gateway extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_address_info);
-        button = (Button)findViewById(R.id.enter_signin);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        setContentView(R.layout.activity_payment_gateway);
 
-                Intent intent = new Intent(Address_info.this, Payment_gateway.class);
-                startActivity(intent);
-
-            }
-        });
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -35,7 +22,7 @@ public class Address_info extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_address_info, menu);
+        getMenuInflater().inflate(R.menu.menu_payment_gateway, menu);
         return true;
     }
 

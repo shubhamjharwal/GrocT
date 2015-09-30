@@ -3,13 +3,12 @@
     android:id="@+id/three_rl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@+id/rlay"
-    android:background="#ffffff"
-    android:orientation="vertical">
+    android:layout_below="@+id/rlay">
+
 
     <RelativeLayout
-        android:id="@+id/rlay"
-        android:layout_width="wrap_content"
+       android:id="@+id/rl1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <include layout="@layout/statusbarcolor" />
@@ -17,85 +16,102 @@
         <include
             android:id="@+id/tool_bar"
             layout="@layout/toolbar"></include>
+
+
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_below="@+id/rlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout">
+        android:layout_below="@id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@+id/rlay"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="The App is owned by TJS SOLUTIONS PVT. LTD."
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:id="@+id/textView"/>
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:drawableLeft="@drawable/dots"
+
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The App is owned by TJS SOLUTIONS PVT. LTD."
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/textView"/>
+
+            <View
+                android:background="@color/accent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:drawableLeft="@drawable/dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="With its Registered office located at,#40c3, 4th Floor, Richmond Plaza R.R.M.R Road Richmond Circle Bangalore-560025"
+                android:layout_below="@+id/textView"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/textview1"
+                />
+
+            <View
+                android:background="@color/accent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:drawableLeft="@drawable/dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Apps like these and any kind of software and web solutions"
+                android:layout_below="@+id/textview1"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/textView2"/>
+
+            <View
+                android:background="@color/accent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+        </LinearLayout>
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="
-
-         With its Registered office located at,#40c3, 4th Floor, Richmond Plaza R.R.M.R Road Richmond Circle Bangalore-560025"
-            android:layout_below="@+id/textView"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:id="@+id/textview1"
-            />
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="For Apps like these and any kind of
-            software and web solutions,
-            Contact us :"
-            android:layout_below="@+id/textview1"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:id="@+id/textView2"/>
-
-<TextView
-    android:id="@+id/textview3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="
-    Email :"
-    android:layout_below="@+id/textView2"
-    android:textSize="20dp"
-    android:textColor="#000"/>
-<TextView
-    android:id="@+id/email_id"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="  enquiry@tjs.co.in"
-    android:textColor="#000"
-    android:layout_alignBottom="@+id/textview3"
-    android:layout_toRightOf="@+id/textview3"
-    android:layout_toEndOf="@+id/textview3"
-    android:textSize="20dp"/>
-
-        <TextView
+            android:drawableLeft="@drawable/dots"
             android:id="@+id/textview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Website :"
+            android:text="Website : www.tjs.co.in"
             android:textColor="#000"
             android:textSize="20dp"
-            android:layout_below="@+id/textview3"/>
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
         <TextView
-            android:id="@+id/web_site"
-            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/dots"
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  www.tjs.co.in"
-            android:textColor="#000"
+            android:text="Email : enquiry@tjs.co.in"
             android:textSize="20dp"
-            android:layout_toRightOf="@+id/textview4"
-            android:layout_toEndOf="@+id/textview4"
-            android:layout_below="@+id/textview3"
-            />
+            android:textColor="#000"
+            android:layout_above="@+id/textview4"
+             />
+
 
     </RelativeLayout>
+
+
+
+
+
 
 
 

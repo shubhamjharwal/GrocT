@@ -2,24 +2,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
-    <item
-        android:id="@+id/help_center"
-        android:icon="@drawable/add"
-        android:orderInCategory="6"
 
-        android:title="@string/help_center"
-        app:showAsAction="withText" />
+
     <item
-        android:id="@+id/My_Cart"
-        android:orderInCategory="2"
-        android:icon="@drawable/home"
-        android:title="@string/my_cart"
-        app:showAsAction="withText" />
+        android:id="@+id/cart"
+        android:icon="@drawable/search"
+        android:orderInCategory="50"
+        android:title="Cart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/seac"
+        android:orderInCategory="60"
+        android:title="Search"
+        app:showAsAction="always" />
+
+
+        <item
+
+            android:id="@+id/help_center"
+            android:icon="@drawable/add"
+            android:orderInCategory="6"
+            android:title="@string/help_center"
+            app:showAsAction="never|withText" />
+        <item
+            android:id="@+id/My_Cart"
+            android:orderInCategory="2"
+            android:icon="@drawable/home"
+            android:title="@string/my_cart"
+            app:showAsAction="withText" />
+
+
+
+
+
     <item
         android:id="@+id/My_profile"
         android:orderInCategory="1"
         android:title="@string/my_profile"
         app:showAsAction="withText" />
+
+
     <item
         android:id="@+id/My_Wishlist"
         android:orderInCategory="3"
@@ -36,17 +60,9 @@
         android:title="My Orders"
         app:showAsAction="withText" />
 
-    <item
-        android:id="@+id/cart"
-        android:icon="@drawable/search"
-        android:orderInCategory="50"
-        android:title="Cart"
-        app:showAsAction="always" />
 
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/seac"
-        android:orderInCategory="60"
-        android:title="Search"
-        app:showAsAction="always" />
+
+
+
+
 </menu>

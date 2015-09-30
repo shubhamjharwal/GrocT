@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();// Finally we set the drawer toggle sync State
- 
+
 
     }
 

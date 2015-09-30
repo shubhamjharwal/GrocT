@@ -86,6 +86,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 contxt.startActivity(intent1);
             }
 
+            if(getPosition()==1) {
+                Intent intent2 = new Intent(contxt, MainActivity.class);
+                contxt.startActivity(intent2);
+            }
+
 
             }
         }

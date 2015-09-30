@@ -28,6 +28,12 @@ public class Search extends AppCompatActivity {
         mAdapter = new GridAdapter1();
         mRecyclerView.setAdapter(mAdapter);
 
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        return;
+
     }
 
     @Override

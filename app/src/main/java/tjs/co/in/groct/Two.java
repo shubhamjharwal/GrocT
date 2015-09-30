@@ -23,6 +23,12 @@ public class Two extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        return;
     }
 
     @Override

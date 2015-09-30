@@ -15,9 +15,9 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:src="@drawable/splash"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:src="@drawable/loginimage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/imageView2"
                 android:layout_gravity="center_horizontal" />
 
@@ -45,7 +45,7 @@
                     android:orientation="vertical"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="60dp">
+                    android:paddingTop="30dp">
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/input_layout_name"
@@ -97,7 +97,7 @@
                     <Button android:id="@+id/btn_signin"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="SIGN IN "
+                        android:text="LOGIN "
                         android:background="@color/accent"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"/>
