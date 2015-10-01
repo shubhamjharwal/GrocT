@@ -44,7 +44,7 @@ public class Sign_in extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Sign_in.this, MainActivity.class);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Account Has been Created",
+                Toast.makeText(getApplicationContext(), "Account Has been Created and Welcome",
                         Toast.LENGTH_SHORT).show();
             }
         });

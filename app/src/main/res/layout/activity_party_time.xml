@@ -21,9 +21,9 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:src="@drawable/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:src="@drawable/partytime"
+            android:layout_width="230dp"
+            android:layout_height="230dp" />
 
 
     </LinearLayout>

@@ -215,16 +215,16 @@
                 android:value="tjs.co.in.groct.MainActivity" />
         </activity>
         <activity
-            android:name=".Hurry"
-            android:label="@string/title_activity_hurry"
+            android:name=".Discount"
+            android:label="@string/title_activity_discount"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="tjs.co.in.groct.MainActivity" />
         </activity>
         <activity
-            android:name=".Discount"
-            android:label="@string/title_activity_discount"
+            android:name=".Hurry"
+            android:label="@string/title_activity_hurry"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -90,7 +90,28 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
                 public void onClick(View v) {
 
                     if (getPosition()==0){
-                        Intent intent = new Intent(v.getContext(),  MainActivity.class);
+                        Intent intent = new Intent(v.getContext(),  Love.class);
+                        v.getContext().startActivity(intent);
+                    }
+
+                    if (getPosition()==1){
+                        Intent intent = new Intent(v.getContext(),  Ufo.class);
+                        v.getContext().startActivity(intent);
+                    }
+
+                    if (getPosition()==2){
+                        Intent intent = new Intent(v.getContext(), Destiny.class);
+                        v.getContext().startActivity(intent);
+                    }
+
+
+                    if (getPosition()==3){
+                        Intent intent = new Intent(v.getContext(),  Discount.class);
+                        v.getContext().startActivity(intent);
+                    }
+
+                    if (getPosition()==4){
+                        Intent intent = new Intent(v.getContext(),  Hurry.class);
                         v.getContext().startActivity(intent);
                     }
 

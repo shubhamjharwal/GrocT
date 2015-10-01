@@ -20,9 +20,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/profile" />
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/hh" />
 
 
     </LinearLayout>
