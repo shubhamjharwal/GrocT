@@ -18,21 +18,12 @@ public class Search extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        mRecyclerView = (RecyclerView) findViewById(R.id.Recycleview2);
-        mRecyclerView.setHasFixedSize(true);
-
-        // The number of Columns
-        mLayoutManager = new GridLayoutManager(this, 1);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-        mAdapter = new GridAdapter1();
-        mRecyclerView.setAdapter(mAdapter);
-
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         return;
+
 
     }
 

@@ -95,45 +95,11 @@ public class GridAdapter1 extends RecyclerView.Adapter<GridAdapter1.ViewHolder> 
 
         public ImageView imgThumbnail;
         public TextView tvspecies;
-        Button button,button1;
 
         public ViewHolder(View itemView) {
             super(itemView);
             imgThumbnail = (ImageView)itemView.findViewById(R.id.img_thumbnail);
             tvspecies = (TextView)itemView.findViewById(R.id.tv_species);
-             button = (Button)itemView.findViewById(R.id.plus_id);
-             button1 = (Button)itemView.findViewById(R.id.minus_id);
-
-
-
-            button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(context,"Item Added",Toast.LENGTH_SHORT).show();
-
-                }
-            });
-
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (getPosition()==0)
-
-                   {
-
-
-
-
-                    }
-
-
-
-                }
-            });
-
-
 
         }
     }

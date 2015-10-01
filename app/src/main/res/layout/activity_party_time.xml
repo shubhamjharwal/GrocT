@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="tjs.co.in.groct.Helpline">
+    tools:context="tjs.co.in.groct.Party_time">
 
     <include layout="@layout/statusbarcolor" />
 
@@ -13,18 +13,18 @@
         layout="@layout/toolbar"></include>
 
 
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/helpline" />
+            android:src="@drawable/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
-
 </RelativeLayout>

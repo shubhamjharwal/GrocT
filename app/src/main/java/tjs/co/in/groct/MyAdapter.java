@@ -91,6 +91,29 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 contxt.startActivity(intent2);
             }
 
+            if(getPosition()==3) {
+                Intent intent3 = new Intent(contxt, Beverages.class);
+                contxt.startActivity(intent3);
+            }
+
+
+            if(getPosition()==5) {
+                Intent intent4 = new Intent(contxt, Personalcare.class);
+                contxt.startActivity(intent4);
+            }
+
+
+            if(getPosition()==6) {
+                Intent intent5 = new Intent(contxt, Household.class);
+                contxt.startActivity(intent5);
+            }
+
+
+            if(getPosition()==7) {
+                Intent intent6 = new Intent(contxt, Party_time.class);
+                contxt.startActivity(intent6);
+            }
+
 
             }
         }

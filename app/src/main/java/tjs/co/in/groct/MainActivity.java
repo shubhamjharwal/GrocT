@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
 
-                Intent intent = new Intent(MainActivity.this,One.class);
+                Intent intent = new Intent(MainActivity.this, One.class);
                 startActivity(intent);
 
             }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
 
-                Intent intent1 = new Intent(MainActivity.this,Two.class);
+                Intent intent1 = new Intent(MainActivity.this, Two.class);
                 startActivity(intent1);
 
 
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
 
-                Intent intent2 = new Intent(MainActivity.this,Three.class);
+                Intent intent2 = new Intent(MainActivity.this, Three.class);
                 startActivity(intent2);
 
 
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSliderClick(BaseSliderView baseSliderView) {
 
-                Intent intent3 = new Intent(MainActivity.this,Four.class);
+                Intent intent3 = new Intent(MainActivity.this, Four.class);
                 startActivity(intent3);
 
             }
@@ -222,8 +222,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-
-
 
 
         return super.onOptionsItemSelected(item);

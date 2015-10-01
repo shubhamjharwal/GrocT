@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="tjs.co.in.groct.Helpline">
+    tools:context="tjs.co.in.groct.Destiny">
 
     <include layout="@layout/statusbarcolor" />
 
@@ -20,11 +20,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/helpline" />
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/redbull" />
 
 
     </LinearLayout>
-
 </RelativeLayout>

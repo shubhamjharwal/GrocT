@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".Vegetables"
-            android:label="@string/title_activity_fruits"
+            android:label="Vegetables"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -45,8 +45,7 @@
         </activity>
         <activity
             android:name=".Sign_in"
-            android:label="hello" >
-        </activity>
+            android:label="hello" />
         <activity
             android:name=".Signin"
             android:label="@string/title_activity_signin"
@@ -66,6 +65,9 @@
         <activity
             android:name=".Search"
             android:label="@string/title_activity_search" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
         </activity>
         <activity
             android:name=".Myprofile"
@@ -109,12 +111,10 @@
         </activity>
         <activity
             android:name=".Address_info"
-            android:label="@string/title_activity_address_info" >
-        </activity>
+            android:label="@string/title_activity_address_info" />
         <activity
             android:name=".One"
             android:label="@string/title_activity_one"
-
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -157,6 +157,78 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="tjs.co.in.groct.Address_info" />
+        </activity>
+        <activity
+            android:name=".Beverages"
+            android:label="@string/title_activity_beverages"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Personalcare"
+            android:label="@string/title_activity_personalcare"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Household"
+            android:label="@string/title_activity_household"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Party_time"
+            android:label="@string/title_activity_party_time"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Love"
+            android:label="@string/title_activity_love"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Ufo"
+            android:label="@string/title_activity_ufo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Destiny"
+            android:label="@string/title_activity_destiny"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Hurry"
+            android:label="@string/title_activity_hurry"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Discount"
+            android:label="@string/title_activity_discount"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tjs.co.in.groct.MainActivity" />
         </activity>
     </application>
 

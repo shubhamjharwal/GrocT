@@ -9,9 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.support.v7.widget.GridLayoutManager;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
+
 
 public class Vegetables extends AppCompatActivity {
 
@@ -36,7 +34,9 @@ public class Vegetables extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        return;
 
 
 
